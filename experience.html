@@ -4,102 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience | Dongchen Wang</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Site styles -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
+    <!-- ===== NAVIGATION ===== -->
     <nav>
-        <div class="logo">Dongchen Wang</div>
-        <ul>
+        <a class="nav-logo" href="index.html">Dongchen Wang</a>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="assets/pdf/cv.pdf" target="_blank">CV</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+            <li><a href="Dongchen_WANG_CV_V3.pdf" target="_blank" class="nav-cv">CV <i class="fa-solid fa-file-pdf fa-xs"></i></a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <h1>Professional Experience</h1>
-
-        <section>
-            <h2>Education</h2>
-            <div class="list-item">
-                <span class="date">2015–2022</span>
-                <h3>Ph.D. in Civil and Environmental Engineering</h3>
-                <p><strong>University of Illinois at Urbana-Champaign, USA</strong></p>
-                <p>Concentration in Water Resources Engineering and Science. Thesis: <em>Density-Driven Mixing Layer in Environmental Flows</em>. Advisor: Marcelo H. Garcia.</p>
-            </div>
-            <div class="list-item">
-                <span class="date">2015–2022</span>
-                <h3>M.S. in Applied Mathematics</h3>
-                <p><strong>University of Illinois at Urbana-Champaign, USA</strong></p>
-                <p>Concentration in Computer Science and Engineering (Scientific computing track).</p>
-            </div>
-            <div class="list-item">
-                <span class="date">2010–2013</span>
-                <h3>M.S. and Engineer Diploma in Hydraulic Engineering</h3>
-                <p><strong>École Polytechnique joint with University of Nice–Sophia Antipolis, France</strong></p>
-                <p>Concentration in Hydro-informatics.</p>
-            </div>
-            <div class="list-item">
-                <span class="date">2006–2010</span>
-                <h3>B.S. in Mechanical Engineering</h3>
-                <p><strong>University of Science and Technology Beijing, China</strong></p>
-                <p>Concentration in Thermal Energy and Dynamics Engineering.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Work Experience</h2>
-            <div class="list-item">
-                <span class="date">2022–Present</span>
-                <h3>Postdoctoral Scholar</h3>
-                <p><strong>California Institute of Technology (Caltech), Pasadena, CA</strong></p>
-                <p>Lamb Surface Processes Group, GPS Division. Working on NASA Delta-X and NSF/USACE projects.</p>
-            </div>
-            <div class="list-item">
-                <span class="date">2013–2014</span>
-                <h3>Engineer</h3>
-                <p><strong>Saint-Venant Hydraulics Lab, EDF, France</strong></p>
-                <p>Developed modules in OpenTelemac for hydro-morphodynamics and river-meandering dynamics.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Teaching & Mentorship</h2>
-            <div class="list-item">
-                <h3>Mentorship</h3>
-                <p>Mentored undergraduate students through Caltech's SURF program and PhD students at Caltech and UIUC.</p>
-            </div>
-            <div class="list-item">
-                <h3>Teaching Interests</h3>
-                <p>Environmental Fluid Mechanics, Hydraulic Analysis, Surface Hydrology, Remote Sensing, Machine Learning.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Awards & Scholarships</h2>
-            <ul>
-                <li><strong>Outstanding Student Presentation Award (OSPA)</strong>, American Geophysical Union (AGU) Annual Meeting, 2021.</li>
-                <li><strong>Best Student Paper Award</strong>, Illinois Water Conference, 2018.</li>
-                <li><strong>International Erasmus Mundus Scholarship</strong>, European Union (EU), 2012.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Academic Services</h2>
-            <ul>
-                <li><strong>Reviewer:</strong> Earth Surface Dynamics, Journal of Hydrology, JGR – Earth Surface, Geomorphology.</li>
-                <li><strong>President (2021-2022):</strong> IAHR Young Professionals Network.</li>
-                <li><strong>Co-founder (2022):</strong> ILLINOIS+MINNESOTA Hydro-Geo Seminar Series.</li>
-            </ul>
-        </section>
+    <div class="page-header">
+        <h1>Experience</h1>
+        <p>Education &middot; Work &middot; Teaching &middot; Awards &middot; Service</p>
     </div>
 
+    <div class="page-wrapper">
+
+        <!-- ===== EDUCATION ===== -->
+        <div class="section-heading">
+            <h2>Education</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2015 &ndash; 2022</div>
+                <h3>Ph.D. in Civil and Environmental Engineering</h3>
+                <div class="timeline-institution">University of Illinois at Urbana-Champaign, USA</div>
+                <p class="timeline-detail">
+                    Concentration in Water Resources Engineering and Science.<br>
+                    Thesis: <em>Density-Driven Mixing Layer in Environmental Flows</em><br>
+                    Advisor: Prof. Marcelo H. Garcia
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2015 &ndash; 2022</div>
+                <h3>M.S. in Applied Mathematics</h3>
+                <div class="timeline-institution">University of Illinois at Urbana-Champaign, USA</div>
+                <p class="timeline-detail">
+                    Concentration in Computer Science and Engineering (Scientific computing track).
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2010 &ndash; 2013</div>
+                <h3>M.S. and Engineer Diploma in Hydraulic Engineering</h3>
+                <div class="timeline-institution">&#201;cole Polytechnique joint with University of Nice&ndash;Sophia Antipolis, France</div>
+                <p class="timeline-detail">
+                    Concentration in Hydro-informatics.<br>
+                    <em>Recipient of the International Erasmus Mundus Scholarship (European Union, 2012)</em>
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2006 &ndash; 2010</div>
+                <h3>B.S. in Mechanical Engineering</h3>
+                <div class="timeline-institution">University of Science and Technology Beijing, China</div>
+                <p class="timeline-detail">
+                    Concentration in Thermal Energy and Dynamics Engineering.
+                </p>
+            </div>
+        </div>
+
+        <!-- ===== WORK EXPERIENCE ===== -->
+        <div class="section-heading" style="margin-top: 3.5rem;">
+            <h2>Work Experience</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2022 &ndash; Present</div>
+                <h3>Postdoctoral Scholar</h3>
+                <div class="timeline-institution">California Institute of Technology (Caltech), Pasadena, CA</div>
+                <p class="timeline-detail">
+                    Lamb Surface Processes Group, GPS Division.<br>
+                    Working on NASA Delta-X and NSF / USACE freshwater flocculation projects.
+                    Mentoring undergraduate (SURF) and graduate students.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2013 &ndash; 2014</div>
+                <h3>Engineer</h3>
+                <div class="timeline-institution">Saint-Venant Hydraulics Lab, EDF (&#201;lectricit&#233; de France), France</div>
+                <p class="timeline-detail">
+                    Developed modules in OpenTelemac for hydro-morphodynamics and river-meandering dynamics.
+                    Collaborated with the U.S. Department of Agriculture on large wood debris research.
+                </p>
+            </div>
+        </div>
+
+        <!-- ===== TEACHING & MENTORSHIP ===== -->
+        <div class="section-heading" style="margin-top: 3.5rem;">
+            <h2>Teaching &amp; Mentorship</h2>
+        </div>
+
+        <div class="about-section">
+            <p>
+                <strong>Mentorship:</strong> Mentored undergraduate students through Caltech's Summer Undergraduate Research
+                Fellowship (SURF) program, and Ph.D. students at Caltech and UIUC on topics in computational fluid dynamics,
+                sediment transport, and remote sensing data analysis.
+            </p>
+            <p>
+                <strong>Teaching Interests:</strong> Environmental Fluid Mechanics, Hydraulic Analysis, Surface Hydrology,
+                Remote Sensing and Image Analysis, Machine Learning in Earth Science, High-Performance Scientific Computing.
+            </p>
+        </div>
+
+        <!-- ===== AWARDS & SCHOLARSHIPS ===== -->
+        <div class="section-heading" style="margin-top: 3.5rem;">
+            <h2>Awards &amp; Scholarships</h2>
+        </div>
+
+        <ul class="awards-list">
+            <li>
+                <div>
+                    <strong>Outstanding Student Presentation Award (OSPA)</strong><br>
+                    <span style="color: var(--text-muted); font-size: 0.9em;">American Geophysical Union (AGU) Annual Meeting, 2021</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <strong>Best Student Paper Award</strong><br>
+                    <span style="color: var(--text-muted); font-size: 0.9em;">Illinois Water Conference, 2018</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <strong>International Erasmus Mundus Scholarship</strong><br>
+                    <span style="color: var(--text-muted); font-size: 0.9em;">European Union (EU), 2012</span>
+                </div>
+            </li>
+        </ul>
+
+        <!-- ===== ACADEMIC SERVICES ===== -->
+        <div class="section-heading" style="margin-top: 3.5rem;">
+            <h2>Academic Services</h2>
+        </div>
+
+        <div class="about-section">
+            <p>
+                <strong>Peer Reviewer:</strong> Earth Surface Dynamics &middot; Journal of Hydrology &middot;
+                JGR &ndash; Earth Surface &middot; Geomorphology
+            </p>
+            <p>
+                <strong>President (2021&ndash;2022):</strong> IAHR Young Professionals Network
+            </p>
+            <p>
+                <strong>Co-founder (2022):</strong> ILLINOIS+MINNESOTA Hydro-Geo Seminar Series
+            </p>
+        </div>
+
+    </div><!-- /.page-wrapper -->
+
     <footer>
-        <p>&copy; 2026 Dongchen Wang | California Institute of Technology</p>
+        <p>&copy; 2026 Dongchen Wang &mdash; California Institute of Technology</p>
+        <p><a href="mailto:dwang53@caltech.edu">dwang53@caltech.edu</a></p>
     </footer>
 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
