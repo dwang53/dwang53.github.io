@@ -1,0 +1,177 @@
+/* Root Variables for Professional Branding */
+:root {
+  --primary-color: #00356B; /* Caltech-inspired Deep Blue */
+  --secondary-color: #333;
+  --accent-color: #FF6600; /* Caltech Orange for accents */
+  --bg-color: #F8F9FA;
+  --text-color: #212529;
+  --header-bg: #FFFFFF;
+  --footer-bg: #00356B;
+  --footer-text: #FFFFFF;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Navigation Bar */
+nav {
+  background-color: var(--header-bg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1.5em;
+}
+
+nav ul li a {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  padding: 2em 0;
+  border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 2em;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  color: var(--secondary-color);
+  margin: 0.5em 0;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 3em;
+}
+
+section h2 {
+  border-left: 5px solid var(--primary-color);
+  padding-left: 15px;
+  margin-bottom: 1em;
+}
+
+/* Publication & Project Lists */
+.list-item {
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-item h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.list-item .date {
+  font-weight: bold;
+  color: var(--secondary-color);
+  font-size: 0.9em;
+}
+
+.list-item .description {
+  margin-top: 0.5em;
+}
+
+/* News Ticker Style */
+.news-item {
+  background: #E8F0FE;
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 2em 0;
+  margin-top: 4em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    margin-top: 1em;
+  }
+  nav ul li {
+    margin: 0 0.5em;
+  }
+  .container {
+    margin: 1em;
+    padding: 1em;
+  }
+}
