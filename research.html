@@ -4,78 +4,415 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Dongchen Wang</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Site styles -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
+    <!-- ===== NAVIGATION ===== -->
     <nav>
-        <div class="logo">Dongchen Wang</div>
-        <ul>
+        <a class="nav-logo" href="index.html">Dongchen Wang</a>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
+            <li><a href="research.html" class="active">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="experience.html">Experience</a></li>
-            <li><a href="assets/pdf/cv.pdf" target="_blank">CV</a></li>
+            <li><a href="Dongchen_WANG_CV_V3.pdf" target="_blank" class="nav-cv">CV <i class="fa-solid fa-file-pdf fa-xs"></i></a></li>
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="page-header">
         <h1>Research</h1>
-
-        <section>
-            <h2>Grants</h2>
-            <div class="list-item">
-                <span class="date">2023–2025</span>
-                <h3>NSF Flagship Supercomputer Frontera EAR23015</h3>
-                <p><strong>Title:</strong> The role of flocculation in building land in river deltas: Theory of microscale processes and its impact on macroscale modeling at the Mississippi Delta.</p>
-                <p><strong>PI:</strong> Michael P. Lamb. <strong>Role:</strong> Drafted grant proposal and managed resource allocation.</p>
-            </div>
-            <div class="list-item">
-                <span class="date">2022–2025</span>
-                <h3>NSF Flagship Supercomputer Frontera CTS22005</h3>
-                <p><strong>Title:</strong> Interfacial turbulence modeling in environmental flows.</p>
-                <p><strong>PI:</strong> Marcelo H. Garcia. <strong>Role:</strong> Drafted grant proposal and managed resource allocation.</p>
-            </div>
-            <div class="list-item">
-                <span class="date">2019–2023</span>
-                <h3>NSF XSEDE TG-CTS190067</h3>
-                <p><strong>Amount:</strong> US$866,300.00. <strong>Title:</strong> Understanding complex dynamics in engineered and natural river networks.</p>
-                <p><strong>PI:</strong> Marcelo H. Garcia. <strong>Role:</strong> Drafted grant proposal and managed resource allocation.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Selected Research Projects</h2>
-            <div class="list-item">
-                <h3>NASA Delta-X</h3>
-                <p>Numerical modeling of the Mississippi River Delta’s land evolution and climate risk assessment. Enabling deltas to thrive in a century of rising seas, in collaboration with NASA JPL, BU, and UT Austin.</p>
-            </div>
-            <div class="list-item">
-                <h3>Freshwater Focculation</h3>
-                <p>Impact of flocculation on sustaining floodplains and deltaic wetlands, in collaboration with the U.S. Army Corps of Engineers and Water Institute. (Funding: NSF)</p>
-            </div>
-            <div class="list-item">
-                <h3>Great Lakes Watershed Climate Change</h3>
-                <p>Impact of climate change and invasive species mitigation on the Chicago Area Waterway System, relating to flooding, water quality, and navigation. (Funding: NSF and MWRD)</p>
-            </div>
-            <div class="list-item">
-                <h3>Extreme Weather Mudflow/Debris Flow</h3>
-                <p>Simulation of mudflow/debris flow during a 1,000-year precipitation event in Palmdale, CA: climate-related extreme weather and safety/risk analysis. (Funding: Private sector)</p>
-            </div>
-            <div class="list-item">
-                <h3>Density-Driven Mixing Layers</h3>
-                <p>Investigation of mixing layers and surface patterns in the Chicago Sanitary and Ship Canal, in collaboration with the U.S. Geological Survey.</p>
-            </div>
-            <div class="list-item">
-                <h3>Large Wood Debris (LWD) Impact</h3>
-                <p>Quantifying the effects of LWD patches on flow resistance and bank erosion in evolving meandering rivers, in collaboration with the U.S. Department of Agriculture.</p>
-            </div>
-        </section>
+        <p>High-performance computing &middot; Remote sensing &middot; Geomorphology</p>
     </div>
 
+    <div class="page-wrapper">
+
+        <!-- ===== GRANTS / SUPERCOMPUTER ALLOCATIONS =====
+             HOW TO ADD A GRANT:
+             Copy one .grant-card block below and update:
+               - .grant-badge text: funder acronym (NSF, NASA, DOE ...)
+               - .grant-year: date range
+               - h3: grant name / award number
+               - .grant-amount: dollar amount (remove span if no public amount)
+               - paragraph: title, PI, and your role
+        -->
+        <div class="section-heading">
+            <h2>Grants &amp; Supercomputer Allocations</h2>
+        </div>
+
+        <div>
+            <!-- Grant 1 -->
+            <div class="grant-card">
+                <div class="grant-badge">NSF<span class="grant-year">2023&ndash;2025</span></div>
+                <div class="grant-info">
+                    <h3>NSF Flagship Supercomputer Frontera <em>EAR23015</em></h3>
+                    <p><strong>Title:</strong> The role of flocculation in building land in river deltas: Theory of microscale processes and its impact on macroscale modeling at the Mississippi Delta.</p>
+                    <p><strong>PI:</strong> Michael P. Lamb &nbsp;&middot;&nbsp; <strong>My Role:</strong> Drafted grant proposal and managed resource allocation.</p>
+                </div>
+            </div>
+
+            <!-- Grant 2 -->
+            <div class="grant-card">
+                <div class="grant-badge">NSF<span class="grant-year">2022&ndash;2025</span></div>
+                <div class="grant-info">
+                    <h3>NSF Flagship Supercomputer Frontera <em>CTS22005</em></h3>
+                    <p><strong>Title:</strong> Interfacial turbulence modeling in environmental flows.</p>
+                    <p><strong>PI:</strong> Marcelo H. Garcia &nbsp;&middot;&nbsp; <strong>My Role:</strong> Drafted grant proposal and managed resource allocation.</p>
+                </div>
+            </div>
+
+            <!-- Grant 3 -->
+            <div class="grant-card">
+                <div class="grant-badge">NSF<span class="grant-year">2019&ndash;2023</span></div>
+                <div class="grant-info">
+                    <h3>NSF XSEDE <em>TG-CTS190067</em></h3>
+                    <span class="grant-amount">US $866,300</span>
+                    <p><strong>Title:</strong> Understanding complex dynamics in engineered and natural river networks.</p>
+                    <p><strong>PI:</strong> Marcelo H. Garcia &nbsp;&middot;&nbsp; <strong>My Role:</strong> Drafted grant proposal and managed resource allocation.</p>
+                </div>
+            </div>
+        </div><!-- /.fade-in (grants) -->
+
+        <!-- ===== RESEARCH PROJECTS =====
+             Projects are listed most-recent-first (largest year at top).
+
+             HOW TO ADD A NEW PROJECT:
+             1. Copy one complete .project-card block below.
+             2. Update the title, date badge, tags, description, and meta info.
+             3. Place images in assets/img/research/ and replace the figure placeholder div with:
+                  <img src="assets/img/research/your-figure.jpg"
+                       alt="Descriptive caption"
+                       style="width:100%; border-radius:6px;">
+                Recommended size: 800x500 px or larger, JPG or PNG.
+             4. For animations/video, replace the animation placeholder with:
+                  GIF:  <img src="assets/img/research/your-animation.gif" alt="..." style="width:100%; border-radius:6px;">
+                  MP4:  <video controls loop muted playsinline style="width:100%; border-radius:6px;">
+                            <source src="assets/img/research/your-video.mp4" type="video/mp4">
+                        </video>
+             5. Available tag classes: tag-hpc (blue), tag-remote (purple), tag-geo (green).
+        -->
+        <div class="section-heading" style="margin-top: 3.5rem;">
+            <h2>Selected Research Projects</h2>
+        </div>
+
+        <!-- PROJECT 1: NASA Delta-X (2022 - Present) -->
+        <div class="project-card">
+            <div class="project-card-header">
+                <div>
+                    <h2 class="project-card-title">NASA Delta-X: Mississippi River Delta Evolution</h2>
+                    <div class="project-tags">
+                        <span class="tag tag-hpc">HPC</span>
+                        <span class="tag tag-geo">Geomorphology</span>
+                    </div>
+                </div>
+                <span class="project-date-badge">2022 &ndash; Present</span>
+            </div>
+
+            <div class="project-description">
+                <p>
+                    Numerical modeling of the Mississippi River Delta's land evolution and climate-risk assessment,
+                    enabling deltas to thrive in a century of rising seas. This project develops high-resolution
+                    morphodynamic models to simulate sediment transport and land accretion processes across the Wax Lake
+                    and Atchafalaya deltas, informing coastal-resilience strategies under accelerating sea-level rise.
+                </p>
+            </div>
+
+            <!--
+              FIGURE PLACEHOLDER: Replace this div after adding your image.
+              Example: <img src="assets/img/research/nasa-deltax-figure.jpg" alt="NASA Delta-X model output"
+                            style="width:100%; border-radius:6px; margin-bottom:16px;">
+            -->
+            <div class="project-media">
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#128444;</span>
+                    [ Project Figure &mdash; Add your image to <code>assets/img/research/</code> ]
+                </div>
+                <!--
+                  ANIMATION PLACEHOLDER: Replace after adding GIF or MP4.
+                  GIF example: <img src="assets/img/research/nasa-deltax.gif" alt="Delta evolution animation" style="width:100%; border-radius:6px;">
+                  MP4 example: <video controls loop muted playsinline style="width:100%; border-radius:6px;"><source src="assets/img/research/nasa-deltax.mp4" type="video/mp4"></video>
+                -->
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#127902;</span>
+                    [ Animation / Video &mdash; Add MP4 or GIF to <code>assets/img/research/</code> ]
+                </div>
+            </div>
+
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <strong>Collaborators:</strong><br>
+                    NASA JPL, Boston University, UT Austin
+                </div>
+                <div class="project-meta-item">
+                    <strong>Funding:</strong><br>
+                    NASA (Delta-X Mission)
+                </div>
+                <div class="project-meta-item">
+                    <strong>Related Publications:</strong><br>
+                    <a href="publications.html">See publications page &rarr;</a>
+                </div>
+            </div>
+        </div><!-- /.project-card -->
+
+        <!-- PROJECT 2: Freshwater Flocculation (2022 - Present) -->
+        <div class="project-card fade-in">
+            <div class="project-card-header">
+                <div>
+                    <h2 class="project-card-title">Freshwater Flocculation &amp; Deltaic Wetland Sustainability</h2>
+                    <div class="project-tags">
+                        <span class="tag tag-hpc">HPC</span>
+                        <span class="tag tag-geo">Geomorphology</span>
+                    </div>
+                </div>
+                <span class="project-date-badge">2022 &ndash; Present</span>
+            </div>
+
+            <div class="project-description">
+                <p>
+                    Investigating the impact of clay flocculation on sustaining floodplains and deltaic wetlands.
+                    Direct numerical simulation (DNS) and large-eddy simulation (LES) model the micro-scale physics of
+                    floc formation and break-up; these processes are then upscaled into macro-scale sediment-transport
+                    models for river deltas. Results have direct implications for coastal land-loss mitigation in
+                    Louisiana and deltaic regions worldwide.
+                </p>
+            </div>
+
+            <div class="project-media">
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#128444;</span>
+                    [ Project Figure &mdash; Add your image to <code>assets/img/research/</code> ]
+                </div>
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#127902;</span>
+                    [ Animation / Video &mdash; Add MP4 or GIF to <code>assets/img/research/</code> ]
+                </div>
+            </div>
+
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <strong>Collaborators:</strong><br>
+                    U.S. Army Corps of Engineers, Water Institute of the Gulf
+                </div>
+                <div class="project-meta-item">
+                    <strong>Funding:</strong><br>
+                    NSF (Frontera EAR23015)
+                </div>
+                <div class="project-meta-item">
+                    <strong>Related Publications:</strong><br>
+                    <a href="publications.html">Wang et al. (in review), JGR-Earth Surface &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 3: Extreme Weather Mudflow / Debris Flow (2021 - 2022) -->
+        <div class="project-card fade-in">
+            <div class="project-card-header">
+                <div>
+                    <h2 class="project-card-title">Extreme Weather Mudflow &amp; Debris Flow Simulation</h2>
+                    <div class="project-tags">
+                        <span class="tag tag-hpc">HPC</span>
+                    </div>
+                </div>
+                <span class="project-date-badge">2021 &ndash; 2022</span>
+            </div>
+
+            <div class="project-description">
+                <p>
+                    Simulation of mudflow and debris flow during a 1,000-year precipitation event in Palmdale, CA,
+                    focusing on climate-related extreme weather and safety / risk analysis. High-fidelity computational
+                    fluid dynamics models predicted flow pathways, inundation extent, and impact forces on
+                    infrastructure, providing critical data for emergency management and urban planning.
+                </p>
+            </div>
+
+            <div class="project-media">
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#128444;</span>
+                    [ Project Figure &mdash; Add your image to <code>assets/img/research/</code> ]
+                </div>
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#127902;</span>
+                    [ Animation / Video &mdash; Add MP4 or GIF to <code>assets/img/research/</code> ]
+                </div>
+            </div>
+
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <strong>Location:</strong><br>
+                    Palmdale, CA, USA
+                </div>
+                <div class="project-meta-item">
+                    <strong>Funding:</strong><br>
+                    Private sector
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 4: Great Lakes Watershed / Climate Change (2018 - 2022) -->
+        <div class="project-card fade-in">
+            <div class="project-card-header">
+                <div>
+                    <h2 class="project-card-title">Great Lakes Watershed &amp; Climate Change Impacts on CAWS</h2>
+                    <div class="project-tags">
+                        <span class="tag tag-hpc">HPC</span>
+                        <span class="tag tag-remote">Remote Sensing</span>
+                    </div>
+                </div>
+                <span class="project-date-badge">2018 &ndash; 2022</span>
+            </div>
+
+            <div class="project-description">
+                <p>
+                    Investigation of the impact of climate change and invasive-species mitigation on the Chicago Area
+                    Waterway System (CAWS), relating to flooding, water quality, and navigation. High-resolution 3-D
+                    numerical modeling combined with remote sensing quantified how Lake Michigan water-level rise drives
+                    complex bidirectional flows and invasive-species migration pathways. The research informed a
+                    potential 10% increase in allowable water use by the State of Illinois.
+                </p>
+            </div>
+
+            <div class="project-media">
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#128444;</span>
+                    [ Project Figure &mdash; Add your image to <code>assets/img/research/</code> ]
+                </div>
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#127902;</span>
+                    [ Animation / Video &mdash; Add MP4 or GIF to <code>assets/img/research/</code> ]
+                </div>
+            </div>
+
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <strong>Collaborators:</strong><br>
+                    U.S. Geological Survey, UIUC
+                </div>
+                <div class="project-meta-item">
+                    <strong>Funding:</strong><br>
+                    NSF, Metropolitan Water Reclamation District (MWRD)
+                </div>
+                <div class="project-meta-item">
+                    <strong>Related Publications:</strong><br>
+                    <a href="publications.html">Wang et al. (2021), J. Great Lakes Res. &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 5: Density-Driven Mixing Layers (2015 - 2022) -->
+        <div class="project-card fade-in">
+            <div class="project-card-header">
+                <div>
+                    <h2 class="project-card-title">Density-Driven Mixing Layers in Environmental Flows</h2>
+                    <div class="project-tags">
+                        <span class="tag tag-hpc">HPC</span>
+                    </div>
+                </div>
+                <span class="project-date-badge">2015 &ndash; 2022</span>
+            </div>
+
+            <div class="project-description">
+                <p>
+                    Investigation of mixing layers and surface patterns in the Chicago Sanitary and Ship Canal driven
+                    by horizontal density gradients. DNS and LES via NEK5000 revealed the instability mechanisms
+                    governing the spatiotemporal evolution of these interfacial layers, with implications for pollutant
+                    transport and water quality in engineered channels. This work formed the core of the Ph.D. dissertation.
+                </p>
+            </div>
+
+            <div class="project-media">
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#128444;</span>
+                    [ Project Figure &mdash; Add your image to <code>assets/img/research/</code> ]
+                </div>
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#127902;</span>
+                    [ Animation / Video &mdash; Add MP4 or GIF to <code>assets/img/research/</code> ]
+                </div>
+            </div>
+
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <strong>Collaborators:</strong><br>
+                    U.S. Geological Survey
+                </div>
+                <div class="project-meta-item">
+                    <strong>Funding:</strong><br>
+                    NSF XSEDE TG-CTS190067
+                </div>
+                <div class="project-meta-item">
+                    <strong>Related Publications:</strong><br>
+                    <a href="publications.html">Wang et al. (in review), J. Fluid Mechanics &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 6: Large Wood Debris (2013 - 2014) -->
+        <div class="project-card fade-in">
+            <div class="project-card-header">
+                <div>
+                    <h2 class="project-card-title">Large Wood Debris (LWD) Impact on Meandering Rivers</h2>
+                    <div class="project-tags">
+                        <span class="tag tag-hpc">HPC</span>
+                        <span class="tag tag-geo">Geomorphology</span>
+                    </div>
+                </div>
+                <span class="project-date-badge">2013 &ndash; 2014</span>
+            </div>
+
+            <div class="project-description">
+                <p>
+                    Quantifying the effects of large wood debris (LWD) patches on flow resistance and bank erosion in
+                    evolving meandering rivers. Using OpenTelemac coupled with a bank-erosion module, this project
+                    produced the first systematic numerical analysis of how LWD accumulation affects secondary
+                    circulation, sediment routing, and long-term channel migration rates, providing guidance for river
+                    restoration and habitat management.
+                </p>
+            </div>
+
+            <div class="project-media">
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#128444;</span>
+                    [ Project Figure &mdash; Add your image to <code>assets/img/research/</code> ]
+                </div>
+                <div class="media-placeholder">
+                    <span class="placeholder-icon">&#127902;</span>
+                    [ Animation / Video &mdash; Add MP4 or GIF to <code>assets/img/research/</code> ]
+                </div>
+            </div>
+
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <strong>Collaborators:</strong><br>
+                    U.S. Department of Agriculture, Saint-Venant Hydraulics Lab (EDF)
+                </div>
+                <div class="project-meta-item">
+                    <strong>Funding:</strong><br>
+                    U.S. Department of Agriculture
+                </div>
+                <div class="project-meta-item">
+                    <strong>Related Publications:</strong><br>
+                    <a href="publications.html">Mendoza et al. (2016); Langendoen et al. (2016) &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.page-wrapper -->
+
     <footer>
-        <p>&copy; 2026 Dongchen Wang | California Institute of Technology</p>
+        <p>&copy; 2026 Dongchen Wang &mdash; California Institute of Technology</p>
+        <p><a href="mailto:dwang53@caltech.edu">dwang53@caltech.edu</a></p>
     </footer>
 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -4,84 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications | Dongchen Wang</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Site styles -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
+    <!-- ===== NAVIGATION ===== -->
     <nav>
-        <div class="logo">Dongchen Wang</div>
-        <ul>
+        <a class="nav-logo" href="index.html">Dongchen Wang</a>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
+            <li><a href="publications.html" class="active">Publications</a></li>
             <li><a href="experience.html">Experience</a></li>
-            <li><a href="assets/pdf/cv.pdf" target="_blank">CV</a></li>
+            <li><a href="Dongchen_WANG_CV_V3.pdf" target="_blank" class="nav-cv">CV <i class="fa-solid fa-file-pdf fa-xs"></i></a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <h1>Publications & Presentations</h1>
-
-        <section>
-            <h2>Journal Publications (Published)</h2>
-            <div class="list-item">
-                <p>Zaki, A. S., <strong>Wang, D.</strong>, Baker, S. R., Grotzinger, J. P., Dickson, J., & Lamb, M. P. (2025). <strong>Mars’ hourglass landforms as local source-to-sink fluvial systems</strong>. <em>JGR Planets</em>. (accepted)</p>
-            </div>
-            <div class="list-item">
-                <p><strong>Wang, D.</strong>, Li, Z., Rojas-Aguirre, A. F., & García, M. H. (2021). <strong>Impact of Lake Michigan water level rise on complex bidirectional flow in the Chicago Area Waterway System (CAWS)</strong>. <em>Journal of Great Lakes Research</em>, 47(6), 1626–1643.</p>
-            </div>
-            <div class="list-item">
-                <p>Dutta, S., <strong>Wang, D.</strong>, Tassi, P., & García, M. H. (2017). <strong>Three-Dimensional Numerical Modeling of the Bulle Effect: The non-linear distribution of near-bed sediment at fluvial diversions</strong>. <em>Earth Surface Processes and Landforms</em>, 42(14), 2322–2337.</p>
-            </div>
-            <div class="list-item">
-                <p>Mendoza, A., Abad, J. D., Langendoen, E. J., <strong>Wang, D.</strong>, Tassi, P., & El Kadi Abderrezzak, K. E. K. (2016). <strong>Effect of sediment transport boundary conditions on the numerical modeling of bed morphodynamics</strong>. <em>Journal of Hydraulic Engineering</em>, 143(4), 04016099.</p>
-            </div>
-            <div class="list-item">
-                <p>Langendoen, E. J., Mendoza, A., Abad, J. D., Tassi, P., <strong>Wang, D.</strong>, Ata, R., & Hervouet, J. M. (2016). <strong>Improved numerical modeling of river morphodynamics with steep banks</strong>. <em>Advances in Water Resources</em>, 93, 4–14.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Publications (Under Review / In Prep)</h2>
-            <div class="list-item">
-                <p><strong>Wang, D.</strong>, et al. <strong>Modeling mud as flocculated and suspended bed-material load in rivers and deltas</strong>. Submitted to <em>JGR-Earth Surface</em>.</p>
-            </div>
-            <div class="list-item">
-                <p><strong>Wang, D.</strong>, et al. <strong>Weak buoyancy force–driven parallel mixing layer in open-channel flows</strong>. Submitted to <em>Journal of Fluid Mechanics</em>.</p>
-            </div>
-            <div class="list-item">
-                <p><strong>Wang, D.</strong>, et al. <strong>Morphodynamics model of Wax Lake Delta and its implication for coastal wetland building processes</strong>. In preparation.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Oral Presentations</h2>
-            <div class="list-item">
-                <span class="date">Dec 2025</span>
-                <p><strong>AGU Fall Meeting</strong>: Estimation of sediment trapping efficiency of the Wax Lake Delta, Louisiana, using a high-resolution river delta morphodynamic model.</p>
-            </div>
-            <div class="list-item">
-                <span class="date">Feb 2024</span>
-                <p><strong>Caltech Geo-Club</strong>: From surface patterns to subsurface dynamics: A fluid mechanics approach to using remote sensing images.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Poster Presentations</h2>
-            <div class="list-item">
-                <span class="date">Dec 2024</span>
-                <p><strong>AGU Fall Meeting</strong>: A deltaic flow diversion resulted in a decade of net erosion followed by net accretion.</p>
-            </div>
-            <div class="list-item">
-                <span class="date">Dec 2022</span>
-                <p><strong>AGU Fall Meeting</strong>: Turbulent mixing layer with horizontal density gradients in finite-depth channel flows.</p>
-            </div>
-        </section>
+    <div class="page-header">
+        <h1>Publications &amp; Presentations</h1>
+        <p>Peer-reviewed articles, conference presentations, and invited talks</p>
     </div>
 
+    <div class="page-wrapper">
+
+        <!--
+          GOOGLE SCHOLAR LINK:
+          Replace "PLACEHOLDER" in the href below with your actual Google Scholar user ID.
+          Example: https://scholar.google.com/citations?user=AbCdEfGhIjK
+        -->
+        <div style="margin-bottom: 2.5rem;">
+            <a href="https://scholar.google.com/citations?user=PLACEHOLDER" target="_blank" rel="noopener" class="pub-scholar-link">
+                <i class="fa-brands fa-google-scholar"></i>
+                View Full Profile on Google Scholar
+            </a>
+        </div>
+
+        <!-- ===== JOURNAL PUBLICATIONS (PUBLISHED) =====
+             HOW TO ADD A PUBLICATION:
+             1. Copy a .pub-item block below and paste it at the TOP of the relevant section.
+             2. Update year badge, author list (bold your name with <strong>), title, journal, and volume info.
+             3. For DOI links, use: <a href="https://doi.org/XX.XXXX/..." target="_blank" class="doi-link">DOI</a>
+             4. For preprints, link to ESSOAr or arXiv similarly.
+        -->
+        <div class="pub-section">
+            <div class="section-heading">
+                <h2>Journal Publications (Published)</h2>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2025</span>
+                Zaki, A. S., <strong>Wang, D.</strong>, Baker, S. R., Grotzinger, J. P., Dickson, J., &amp; Lamb, M. P. (2025).
+                <strong>Mars' hourglass landforms as local source-to-sink fluvial systems</strong>.
+                <em>JGR Planets</em>. (accepted)
+                <!-- Add DOI once published: <a href="https://doi.org/XX.XXXX/XXXXXX" target="_blank" class="doi-link">DOI</a> -->
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2021</span>
+                <strong>Wang, D.</strong>, Li, Z., Rojas-Aguirre, A. F., &amp; Garc&iacute;a, M. H. (2021).
+                <strong>Impact of Lake Michigan water level rise on complex bidirectional flow in the Chicago Area Waterway System (CAWS)</strong>.
+                <em>Journal of Great Lakes Research</em>, 47(6), 1626&ndash;1643.
+                <a href="https://doi.org/10.1016/j.jglr.2021.07.007" target="_blank" class="doi-link">DOI</a>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2017</span>
+                Dutta, S., <strong>Wang, D.</strong>, Tassi, P., &amp; Garc&iacute;a, M. H. (2017).
+                <strong>Three-Dimensional Numerical Modeling of the Bulle Effect: The non-linear distribution of near-bed sediment at fluvial diversions</strong>.
+                <em>Earth Surface Processes and Landforms</em>, 42(14), 2322&ndash;2337.
+                <!-- <a href="https://doi.org/XX.XXXX/XXXXXX" target="_blank" class="doi-link">DOI</a> -->
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2016</span>
+                Mendoza, A., Abad, J. D., Langendoen, E. J., <strong>Wang, D.</strong>, Tassi, P., &amp; El Kadi Abderrezzak, K. E. K. (2016).
+                <strong>Effect of sediment transport boundary conditions on the numerical modeling of bed morphodynamics</strong>.
+                <em>Journal of Hydraulic Engineering</em>, 143(4), 04016099.
+                <!-- <a href="https://doi.org/XX.XXXX/XXXXXX" target="_blank" class="doi-link">DOI</a> -->
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2016</span>
+                Langendoen, E. J., Mendoza, A., Abad, J. D., Tassi, P., <strong>Wang, D.</strong>, Ata, R., &amp; Hervouet, J. M. (2016).
+                <strong>Improved numerical modeling of river morphodynamics with steep banks</strong>.
+                <em>Advances in Water Resources</em>, 93, 4&ndash;14.
+                <!-- <a href="https://doi.org/XX.XXXX/XXXXXX" target="_blank" class="doi-link">DOI</a> -->
+            </div>
+        </div>
+
+        <!-- ===== UNDER REVIEW / IN PREPARATION ===== -->
+        <div class="pub-section">
+            <div class="section-heading">
+                <h2>Under Review / In Preparation</h2>
+            </div>
+
+            <div class="pub-item">
+                <strong>Wang, D.</strong>, et al.
+                <strong>Modeling mud as flocculated and suspended bed-material load in rivers and deltas</strong>.
+                Submitted to <em>JGR-Earth Surface</em>.
+            </div>
+
+            <div class="pub-item">
+                <strong>Wang, D.</strong>, et al.
+                <strong>Weak buoyancy force&ndash;driven parallel mixing layer in open-channel flows</strong>.
+                Submitted to <em>Journal of Fluid Mechanics</em>.
+            </div>
+
+            <div class="pub-item">
+                <strong>Wang, D.</strong>, et al.
+                <strong>Morphodynamics model of Wax Lake Delta and its implication for coastal wetland building processes</strong>.
+                In preparation.
+            </div>
+        </div>
+
+        <!-- ===== ORAL PRESENTATIONS ===== -->
+        <div class="pub-section">
+            <div class="section-heading">
+                <h2>Oral Presentations</h2>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">Dec 2025</span>
+                <strong>AGU Fall Meeting</strong>: Estimation of sediment trapping efficiency of the Wax Lake Delta,
+                Louisiana, using a high-resolution river delta morphodynamic model.
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">Feb 2024</span>
+                <strong>Caltech Geo-Club</strong>: From surface patterns to subsurface dynamics: A fluid mechanics approach
+                to using remote sensing images.
+            </div>
+        </div>
+
+        <!-- ===== POSTER PRESENTATIONS ===== -->
+        <div class="pub-section">
+            <div class="section-heading">
+                <h2>Poster Presentations</h2>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">Dec 2024</span>
+                <strong>AGU Fall Meeting</strong>: A deltaic flow diversion resulted in a decade of net erosion followed
+                by net accretion.
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">Dec 2022</span>
+                <strong>AGU Fall Meeting</strong>: Turbulent mixing layer with horizontal density gradients in
+                finite-depth channel flows.
+            </div>
+        </div>
+
+    </div><!-- /.page-wrapper -->
+
     <footer>
-        <p>&copy; 2026 Dongchen Wang | California Institute of Technology</p>
+        <p>&copy; 2026 Dongchen Wang &mdash; California Institute of Technology</p>
+        <p><a href="mailto:dwang53@caltech.edu">dwang53@caltech.edu</a></p>
     </footer>
 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
